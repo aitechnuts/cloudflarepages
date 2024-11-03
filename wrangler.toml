@@ -1,0 +1,10 @@
+name = "my-worker"  # Worker の名前
+type = "typescript"  # 使用する言語タイプ (javascript, rust, etc.)
+
+account_id = "748ef78725ed01c9aa3140d576a7327d"  # Cloudflare アカウント ID
+workers_dev = true  # dev モードでのデプロイを有効にするか
+compatibility_date = "2024-11-03"  # 互換性の日付
+
+[env.production]  # プロダクション環境設定
+route = "happyorigin.org/*"  # デプロイ先のルート
+zone_id = "YOUR_ZONE_ID"  # ゾーン ID
